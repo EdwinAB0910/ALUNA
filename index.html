@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALUNA PERÚ - CATÁLOGO</title>
+    <link rel="icon" href="img/LogoAluna.png" sizes="256x256" type="image/png" />
+
+    <link rel="stylesheet" href="css/index.css">
+
+    <style>
+        /* --- CARRUSEL INFINITO --- */
+        .slider {
+            width: 100%;
+            height: 250px;
+            position: relative;
+            overflow: hidden;
+            background: #b6dea9bd;
+        }
+
+        .slide-track {
+            display: flex;
+            width: calc(250px * 10);
+            animation: scroll 30s linear infinite;
+        }
+
+        .slide {
+            width: 250px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(calc(-250px * 5));
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="pagina">
+
+        <header class="encabezado">
+            <div class="logotipo">
+                <img src="img/LogoAluna.png" alt="Logotipo" width="100" />
+                <h1>ALUNA</h1>
+            </div>
+
+            <nav class="nav">
+                <a href="index.html">Catálogo</a>
+                <a href="consultas.html">Consultas</a>
+                <a href="ubicacion.html">Ubicación</a>
+            </nav>
+
+            <div class="menu-plantita">
+
+                <input type="checkbox" id="toggleMenu">
+
+                <label for="toggleMenu" class="btn-menu">🌿</label>
+
+                <div class="menu-opciones">
+                    <a href="#"><img src="img/Monsteraicono.png" class="icono">Monstera</a>
+                    <a href="#"><img src="img/Syngoniumicono.png" class="icono">Syngonium</a>
+                    <a href="#"><img src="img/Caladiumicono.png" class="icono">Caladium</a>
+                    <a href="#"><img src="img/Begoniaicono.png" class="icono">Begonias</a>
+                    <a href="#"><img src="img/Calatheaicono.png" class="icono">Calathea</a>
+                    <a href="#"><img src="img/Aglaonemaicono.png" class="icono">Aglaonema</a>
+                    <a href="#"><img src="img/Helechoicono.png" class="icono">Helechos</a>
+                    <a href="#"><img src="img/Philodendroicono.png" class="icono">Philodendro</a>
+                    <a href="#"><img src="img/Crotonicono.png" class="icono">Croton</a>
+                    <a href="#"><img src="img/Anthuriumicono.png" class="icono">Anthurium</a>
+                    <a href="#"><img src="img/Colocasiaicono.png" class="icono">Colocasia</a>
+                    <a href="#"><img src="img/Alocasiaicono.png" class="icono">Alocasia</a>
+                    <a href="#"><img src="img/Photusicono.png" class="icono">Pothus</a>
+                </div>
+
+            </div>
+        </header>
+
+        <section class="imagencentral">
+            <div class="imagencentraltexto">
+                <h2><strong>Lleva naturaleza a tu hogar</strong><br><strong><em>llena tu vida de bienestar</em></strong>
+                </h2>
+            </div>
+        </section>
+        <main>
+
+            <section class="catalogo">
+                <h2>Productos Destacados</h2>
+
+                <div class="slider">
+                    <div class="slide-track">
+
+                        <!-- GRUPO 1 -->
+                        <div class="slide"><img src="img\Syngonium red spot tricolor.jpeg" alt="Planta1"></div>
+                        <div class="slide"><img src="img/Begonia sp2.jpeg" alt="Planta2"></div>
+                        <div class="slide"><img src="img\Syngonium albo variegata.jpeg" alt="Planta3"></div>
+                        <div class="slide"><img src="img/Begonia sp5.jpeg" alt="Planta4"></div>
+                        <div class="slide"><img src="img\Syngonium bronze-chocolate.jpeg" alt="Planta5"></div>
+
+                        <!-- GRUPO 2 -->
+                        <div class="slide"><img src="img/Begonia sp7.jpeg" alt="Planta1"></div>
+                        <div class="slide"><img src="img\Syngonium alita de ángel.jpeg" alt="Planta2"></div>
+                        <div class="slide"><img src="img/Begonia sp3.jpeg" alt="Planta3"></div>
+                        <div class="slide"><img src="img\Syngonium mosaic.jpeg" alt="Planta4"></div>
+                        <div class="slide"><img src="img/Begonia sp9.jpeg" alt="Planta5"></div>
+                    </div>
+            </section>
+            <section class="productos">
+
+                <h2>Nuestras Plantas</h2>
+
+                <div class="productos-contenedor">
+
+                    <div class="producto">
+                        <img src="img\Symgonium verde.jpeg" alt="Planta1">
+                        <h3>Syngonium verde</h3>
+                        <p>Variedad clásica de verde uniforme.</p>
+                    </div>
+
+                    <div class="producto">
+                        <img src="img\Syngonium albo variegata.jpeg" alt="Planta2">
+                        <h3>Syngonium albo variegata</h3>
+                        <p>Hojas verdes con grandes sectores blancos bien definidos.</p>
+                    </div>
+
+                    <div class="producto">
+                        <img src="img\Syngonium alita de ángel.jpeg" alt="Planta3">
+                        <h3>Syngonium alita de ángel</h3>
+                        <p>Clásico de hojas verde claro en forma de flecha.</p>
+                    </div>
+
+                    <div class="producto">
+                        <img src="img\Syngonium batik.jpeg" alt="Planta4">
+                        <h3>Syngonium batik</h3>
+                        <p>Hojas con venas marcadas en tonos claros sobre fondo verde oscuro, dando un efecto artístico
+                            tipo tela batik.</p>
+                    </div>
+
+                    <div class="producto">
+                        <img src="img\Syngonium bronze-chocolate.jpeg" alt="Planta5">
+                        <h3>Syngonium bronze-chocolate</h3>
+                        <p>Tonos profundos entre marrón, cobre y verde oscuro.</p>
+                    </div>
+
+                    <div class="producto">
+                        <img src="img\Syngonium verde moteado.jpeg" alt="Planta6">
+                        <h3>Syngonium verde moteado</h3>
+                        <p>Hojas con pequeños puntitos o manchas verdes.</p>
+                    </div>
+
+                    <div class="producto">
+                        <img src="img\Syngonium confetti.jpeg" alt="Planta7">
+                        <h3>Syngonium confetti</h3>
+                        <p>Hojas verde claro con pequeños puntos rosados dispersos, como salpicaduras.</p>
+                    </div>
+
+                    <div class="producto">
+                        <img src="img\Syngonium milk confetti.jpeg" alt="Planta8">
+                        <h3>Syngonium milk confetti</h3>
+                        <p>Planta clásica que aporta un toque natural y relajante al ambiente.</p>
+                    </div>
+
+                    <div class="producto">
+                        <img src="img\Syngonium mojito.jpeg" alt="Planta9">
+                        <h3>Syngonium mojito</h3>
+                        <p>Variegación moteada en verde claro y oscuro.</p>
+                    </div>
+
+                    <div class="producto">
+                        <img src="img\Syngonium mosaic.jpeg" alt="Planta10">
+                        <h3>Syngonium mosaic</h3>
+                        <p>Variegación irregular en tonos verde y crema, formando patrones tipo mosaico.</p>
+                    </div>
+                    <div class="producto">
+                        <img src="img\Syngonium pink.jpeg" alt="Planta11">
+                        <h3>Syngonium pink</h3>
+                        <p>Tonalidades rosadas intensas o suaves según la variedad.</p>
+                    </div>
+
+                    <div class="producto">
+                        <img src="img\Syngonium red spot tricolor.jpeg" alt="Planta12">
+                        <h3>Syngonium red spot tricolor</h3>
+                        <p>Hojas con mezcla de verde, blanco y rosado.</p>
+                    </div>
+
+                    <div class="producto">
+                        <img src="img/Syngonium sp.jpeg" alt="Planta13">
+                        <h3>Syngonium sp.</h3>
+                        <p>Hojas verde intenso con venas blancas muy marcadas que forman un patrón artístico y definido.
+                        </p>
+                    </div>
+
+                    <div class="producto">
+                        <img src="img/Syngonium sp1.jpeg" alt="Planta14">
+                        <h3>Syngonium sp.</h3>
+                        <p>Planta de follaje verde, hojas divididas en tres lóbulos, lo que le otorga una apariencia más
+                            estructurada.</p>
+                    </div>
+
+                    <div class="producto">
+                        <img src="img/Syngonium sp2.jpeg" alt="Planta15">
+                        <h3>Syngonium sp.</h3>
+                        <p>Planta ornamental de follaje delicado con tonos verde y blanco suavemente difuminados.</p>
+                    </div>
+
+                    <div class="producto">
+                        <img src="img/Begonia sp1.jpeg" alt="Planta16">
+                        <h3>Begonia sp.</h3>
+                        <p>Planta ornamental de follaje delicado con tonos verde y blanco suavemente difuminados.</p>
+                    </div>
+
+                    <div class="producto">
+                        <img src="img/Begonia sp2.jpeg" alt="Planta17">
+                        <h3>Begonia sp.</h3>
+                        <p>Planta ornamental de follaje delicado con tonos verde y blanco suavemente difuminados.</p>
+                    </div>
+
+                    <div class="producto">
+                        <img src="img/Begonia sp3.jpeg" alt="Planta18">
+                        <h3>Begonia sp.</h3>
+                        <p>Planta ornamental de follaje delicado con tonos verde y blanco suavemente difuminados.</p>
+                    </div>
+
+                    <div class="producto">
+                        <img src="img/Begonia sp4.jpeg" alt="Planta19">
+                        <h3>Begonia sp.</h3>
+                        <p>Planta ornamental de follaje delicado con tonos verde y blanco suavemente difuminados.</p>
+                    </div>
+
+                    <div class="producto">
+                        <img src="img/Begonia sp5.jpeg" alt="Planta20">
+                        <h3>Begonia sp.</h3>
+                        <p>Planta ornamental de follaje delicado con tonos verde y blanco suavemente difuminados.</p>
+                    </div>
+
+                    <div class="producto">
+                        <img src="img/Begonia sp6.jpeg" alt="Planta21">
+                        <h3>Begonia sp.</h3>
+                        <p>Planta ornamental de follaje delicado con tonos verde y blanco suavemente difuminados.</p>
+                    </div>
+
+                    <div class="producto">
+                        <img src="img/Begonia sp7.jpeg" alt="Planta22">
+                        <h3>Begonia sp.</h3>
+                        <p>Planta ornamental de follaje delicado con tonos verde y blanco suavemente difuminados.</p>
+                    </div>
+
+                    <div class="producto">
+                        <img src="img/Begonia sp8.jpeg" alt="Planta23">
+                        <h3>Begonia sp.</h3>
+                        <p>Planta ornamental de follaje delicado con tonos verde y blanco suavemente difuminados.</p>
+                    </div>
+
+                    <div class="producto">
+                        <img src="img/Begonia sp9.jpeg" alt="Planta24">
+                        <h3>Begonia sp.</h3>
+                        <p>Planta ornamental de follaje delicado con tonos verde y blanco suavemente difuminados.</p>
+                    </div>
+
+                </div>
+
+            </section>
+        </main>
+
+    </div>
+
+    <footer class="footer">
+
+        <div class="footer-contenedor">
+
+            <div class="footer-info">
+                <p class="copyright">ALUNA © 2025</p>
+            </div>
+
+            <div class="footer-redes">
+
+                <div class="redes">
+                    <a href="https://www.facebook.com/share/1GKdJh27SV/" target="_blank">
+                        <img src="https://www.svgrepo.com/show/475647/facebook-color.svg" alt="Facebook">
+                    </a>
+
+                    <a href="https://instagram.com/alunaperu_" target="_blank">
+                        <img src="https://www.svgrepo.com/show/452229/instagram-1.svg" alt="Instagram">
+                    </a>
+
+                    <a href="https://tiktok.com/@alunaperu_" target="_blank">
+                        <img src="https://www.svgrepo.com/show/303260/tiktok-logo-logo.svg" alt="TikTok">
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+</body>
