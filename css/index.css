@@ -73,6 +73,23 @@ label[for="modoOscuroToggle"] {
     background: #121212;
     color: white;
 }
+
+.productos section:target {
+    animation: resaltar 3s ease;
+}
+
+@keyframes resaltar {
+    0% {
+        background: #acaeab;
+    }
+    50% {
+        background: #dff5d8;
+    }
+    100% {
+        background: transparent;
+    }
+}
+
 .imagencentral {
     height: 70vh;
     background-image: url('../img/ImagenCentral.jpeg');
@@ -248,6 +265,10 @@ label[for="modoOscuroToggle"] {
 .producto:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+#begonia {
+    padding-top: 30px;
 }
 
 .footer {
