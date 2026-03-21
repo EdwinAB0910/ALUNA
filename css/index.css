@@ -51,7 +51,7 @@
 
 /* modo claro */
 .pagina {
-    background: #b6dea9bd;
+    background: rgb(226, 225, 225);
     color: black;
     min-height: 100vh;
 }
@@ -112,7 +112,7 @@ label[for="modoOscuroToggle"] {
     line-height: 1.4;
 }
 .catalogo{
-    background-color: #b6dea9bd;
+    background-color: rgb(226, 225, 225);
 }
 
 .catalogo h2 {
@@ -199,7 +199,7 @@ label[for="modoOscuroToggle"] {
 
 .productos {
     padding: 60px 10%;
-    background: #b6dea9bd;
+    background: rgb(226, 225, 225);
 }
 
 .titulo-productos {

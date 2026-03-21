@@ -52,7 +52,7 @@
 
 /* modo claro */
 .pagina {
-    background: #b6dea9bd;
+    background: rgb(226, 225, 225);
     color: black;
     min-height: 100vh;
 }
