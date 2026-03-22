@@ -12,8 +12,15 @@
     justify-content: space-between;
     padding: 15px 40px;
     background: #1e3f28;
-    color: white;
 }
+
+.encabezado h1{
+    background: linear-gradient(90deg, rgb(193, 219, 161), #9a9898);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 /* LOGO */
 .logotipo {
     display: flex;
@@ -34,10 +41,13 @@
 
 .nav a {
     text-decoration: none;
-    color: white;
     font-size: 16px;
     font-weight: 500;
     transition: 0.3s;
+    background: linear-gradient(90deg, rgb(139, 226, 202), #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .nav a:hover {
@@ -82,9 +92,11 @@ label[for="modoOscuroToggle"] {
     0% {
         background: #acaeab;
     }
+
     50% {
         background: #dff5d8;
     }
+
     100% {
         background: transparent;
     }
@@ -128,7 +140,8 @@ label[for="modoOscuroToggle"] {
     font-size: 40px;
     line-height: 1.4;
 }
-.catalogo{
+
+.catalogo {
     background-color: rgb(226, 225, 225);
 }
 
@@ -252,22 +265,41 @@ label[for="modoOscuroToggle"] {
 }
 
 .productos h2 {
-    margin: 0 0 40px 20px;
+    margin: 0 0 25px 25px;
 }
 
 .producto p {
-    padding: 0 15px;
+    padding: 7.5px 15px;
     font-size: 14px;
     color: #555;
 }
-
 
 .producto:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
 }
 
+#syngonium {
+    padding-top: 30px;
+}
+
 #begonia {
+    padding-top: 30px;
+}
+
+#aglaonema {
+    padding-top: 30px;
+}
+
+#helechos {
+    padding-top: 30px;
+}
+
+#alocasia {
+    padding-top: 30px;
+}
+
+#peperomia {
     padding-top: 30px;
 }
 
@@ -434,26 +466,44 @@ main {
 
 }
 
-@media (max-width:768px) {
-
-    /* HEADER */
-    .encabezado {
-        flex-direction: column;
-        gap: 15px;
-        text-align: center;
+@media (max-width: 768px) {
+    .productos-contenedor {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .logotipo {
+    .productos {
+        padding: 40px 5%;
+    }
+
+    .titulo-productos {
+        font-size: 26px;
+    }
+
+    .producto img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .encabezado {
         flex-direction: column;
+        justify-content: space-between;
+        align-items: normal;
     }
 
     .nav {
-        flex-direction: column;
-        gap: 10px;
+        flex-direction: row;
+        margin-right: auto;
     }
 
-    .nav a {
-        font-size: 18px;
+    .menu-plantita {
+        margin-left: auto;
+        margin-bottom: center;
+    }
+
+    label[for="modoOscuroToggle"] {
+        margin-left: auto;
+        margin-right: 0;
     }
 
     /* IMAGEN CENTRAL */
@@ -461,52 +511,63 @@ main {
     .imagencentral {
         height: 50vh;
         padding: 20px;
+
     }
-
-    .imagencentraltexto h2 {
-        font-size: 26px;
-    }
-
-    /* CATALOGO */
-
-    .catalogo {
-        padding: 20px;
-    }
-
-    .slide img {
-        width: 160px;
-    }
-
-    /* FOOTER */
-
-    .footer {
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
-        padding: 15px;
-    }
-
-    .redes {
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-    }
-
 }
 
 
-/* ========================= */
-/* CELULARES PEQUEÑOS */
-/* ========================= */
+    @media (max-width:768px) {
 
-@media (max-width:480px) {
+        /* IMAGEN CENTRAL */
 
-    .imagencentraltexto h2 {
-        font-size: 22px;
+        .imagencentral {
+            height: 50vh;
+            padding: 20px;
+        }
+
+        .imagencentraltexto h2 {
+            font-size: 26px;
+        }
+
+        /* CATALOGO */
+
+        .catalogo {
+            padding: 20px;
+        }
+
+        .slide img {
+            width: 160px;
+        }
+
+        /* FOOTER */
+
+        .footer {
+            flex-direction: column;
+            text-align: center;
+            gap: 10px;
+            padding: 15px;
+        }
+
+        .redes {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
     }
 
-    .slide img {
-        width: 130px;
-    }
+    /* ========================= */
+    /* CELULARES PEQUEÑOS */
+    /* ========================= */
 
-}
+    @media (max-width:480px) {
+
+        .imagencentraltexto h2 {
+            font-size: 22px;
+        }
+
+        .slide img {
+            width: 130px;
+        }
+
+    }
