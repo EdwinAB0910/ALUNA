@@ -65,7 +65,7 @@
     justify-content: center;
     width: 60px;
     height: 60px;
-    background: #cfe37d;
+    background: #8ed9ac;
     border-radius: 50%;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     transition: 0.3s;
@@ -78,7 +78,6 @@
 
 .whatsapp-carrusel a:hover {
     transform: scale(1.1);
-    background: #1ebe5d;
 }
 
 /* modo claro */

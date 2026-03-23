@@ -90,7 +90,7 @@ label[for="modoOscuroToggle"] {
     justify-content: center;
     width: 60px;
     height: 60px;
-    background: #cfe37d;
+    background: #8ed9ac;
     border-radius: 50%;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     transition: 0.3s;
@@ -103,7 +103,6 @@ label[for="modoOscuroToggle"] {
 
 .whatsapp-carrusel a:hover {
     transform: scale(1.1);
-    background: #1ebe5d;
 }
 
 .productos section:target {
@@ -155,14 +154,15 @@ label[for="modoOscuroToggle"] {
 .imagencentraltexto {
     position: relative;
     z-index: 2;
-    background: linear-gradient(135deg, #ffffff 0%, #e7f38f 50%, #de8561 100%);
+    background: linear-gradient(135deg, #95da92 0%, #dac0d1 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .imagencentraltexto h2 {
-    font-size: 40px;
+    font-size: 60px;
     line-height: 1.4;
 }
 
@@ -221,7 +221,7 @@ label[for="modoOscuroToggle"] {
     z-index: 1000;
     right: 0;
     top: 50px;
-    background: linear-gradient(135deg, #ffffff 0%, #9ab4bf 50%, #d2c08a 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #9ab4bf 50%, #afe183 100%);
     color: rgb(86, 113, 118);
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
