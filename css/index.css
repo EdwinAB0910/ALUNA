@@ -84,6 +84,28 @@ label[for="modoOscuroToggle"] {
     color: white;
 }
 
+.whatsapp-carrusel a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: #cfe37d;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.whatsapp-carrusel img {
+    width: 30px;
+    height: 30px;
+}
+
+.whatsapp-carrusel a:hover {
+    transform: scale(1.1);
+    background: #1ebe5d;
+}
+
 .productos section:target {
     animation: resaltar 3s ease;
 }
@@ -262,7 +284,7 @@ label[for="modoOscuroToggle"] {
     padding-bottom: 20px;
     position: relative;
     padding: 2px;
-    background-image: linear-gradient(90deg, #abeeab, #cef4d7, #8ef18e);
+    background-image: linear-gradient(90deg, #eee0ab, #cef4d7, #cedd90);
     background-origin: border-box;
     background-clip: border-box;
 }
@@ -551,6 +573,10 @@ main {
         margin-right: 0;
     }
 
+    .info {
+        align-items: right;
+    }
+
     /* IMAGEN CENTRAL */
 
     .imagencentral {
@@ -559,7 +585,6 @@ main {
 
     }
 }
-
 
 @media (max-width:768px) {
 
