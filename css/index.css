@@ -275,7 +275,7 @@ label[for="modoOscuroToggle"] {
 /* tarjeta */
 
 .producto {
-    background: rgb(199, 213, 228);
+    background: white;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -283,10 +283,6 @@ label[for="modoOscuroToggle"] {
     text-align: center;
     padding-bottom: 20px;
     position: relative;
-    padding: 2px;
-    background-image: linear-gradient(90deg, #eee0ab, #cef4d7, #cedd90);
-    background-origin: border-box;
-    background-clip: border-box;
 }
 
 .producto img {
