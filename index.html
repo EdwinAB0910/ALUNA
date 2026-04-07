@@ -4,1197 +4,121 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ALUNA PERÚ - CATÁLOGO</title>
+    <title>ALUNA PERÚ - INICIO</title>
     <link rel="icon" href="img/LogoAluna.png" sizes="256x256" type="image/png" />
 
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <style>
-        /* --- CARRUSEL INFINITO --- */
-        .slider {
-            width: 100%;
-            height: 250px;
-            position: relative;
-            overflow: hidden;
-            background: rgb(226, 225, 225);
-        }
-
-        .slide-track {
-            display: flex;
-            width: calc(250px * 16);
-            animation: scroll 30s linear infinite;
-        }
-
-        .slide {
-            width: 250px;
-            padding: 10px;
-            box-sizing: border-box;
-        }
-
-        .slide img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        @keyframes scroll {
-            0% {
-                transform: translateX(0);
-            }
-
-            100% {
-                transform: translateX(calc(-250px * 8));
-            }
-        }
-    </style>
 </head>
 
 <body>
+    <input type="checkbox" id="modoOscuroToggle">
 
     <div class="pagina">
 
         <header class="encabezado">
             <div class="logotipo">
-                <img src="img/LogoAluna.png" alt="Logotipo" width="100" />
+                <img src="img/LogoAluna.png" alt="Logotipo" width="80" />
                 <h1>ALUNA</h1>
             </div>
 
             <nav class="nav">
-                <a href="index.html">Catálogo</a>
+                <a href="index.html">Inicio</a>
+                <a href="catalogo.html">Catálogo</a>
                 <a href="consultas.html">Consultas</a>
                 <a href="ubicacion.html">Ubicación</a>
             </nav>
 
-            <div class="menu-plantita">
-
-                <input type="checkbox" id="toggleMenu">
-
-                <label for="toggleMenu" class="btn-menu">🌿</label>
-
-                <div class="menu-opciones">
-                    <a href="#monstera"><img src="img/Monsteraicono.png" class="icono">Monstera</a>
-                    <a href="#syngonium"><img src="img/Syngoniumicono.png" class="icono">Syngonium</a>
-                    <a href="#caladium"><img src="img/Caladiumicono.png" class="icono">Caladium</a>
-                    <a href="#begonia"><img src="img/Begoniaicono.png" class="icono">Begonias</a>
-                    <a href="#calathea"><img src="img/Calatheaicono.png" class="icono">Calathea</a>
-                    <a href="#aglaonema"><img src="img/Aglaonemaicono.png" class="icono">Aglaonema</a>
-                    <a href="#helechos"><img src="img/Helechoicono.png" class="icono">Helechos</a>
-                    <a href="#philodendron"><img src="img/Philodendronicono.png" class="icono">Philodendron</a>
-                    <a href="#croton"><img src="img/Crotonicono.png" class="icono">Croton</a>
-                    <a href="#anthurium"><img src="img/Anthuriumicono.png" class="icono">Anthurium</a>
-                    <a href="#colocasia"><img src="img/Colocasiaicono.png" class="icono">Colocasia</a>
-                    <a href="#alocasia"><img src="img/Alocasiaicono.png" class="icono">Alocasia</a>
-                    <a href="#epipremnum"><img src="img/Epipremnumicono.png" class="icono">Epipremnum</a>
-                    <a href="#peperomia"><img src="img/Peperomiaicono.png" class="icono">Peperomia</a>
-                    <a href="#episcia"><img src="img/Episciaicono.png" class="icono">Episcia</a>
-                    <a href="#otros"><img src="img/Otrosicono.png" class="icono">Otros</a>
-                </div>
-
-            </div>
+            <label for="modoOscuroToggle" class="modooscuro">🌙 / ☀️</label>
         </header>
 
-        <section class="imagencentral">
-            <div class="imagencentraltexto">
-                <h2><strong>Haz de tu espacio algo vivo,
-                    </strong><br><strong><em>hazlo Aluna.</em></strong>
-                </h2>
+        <section class="hero">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-contenido">
+                <h1>Conecta tu vida con la naturaleza 🌿</h1>
+                <p>Descubre plantas únicas que transforman tu hogar en un espacio lleno de vida y bienestar</p>
+
+                <div class="hero-botones">
+                    <a href="catalogo.html" class="btn-principal">Ver catálogo</a>
+                </div>
             </div>
+
         </section>
-        <main>
 
-            <section class="catalogo">
-                <h2>Productos Destacados</h2>
+        <section class="nosotros">
 
-                <div class="slider">
-                    <div class="slide-track">
-
-                        <!-- GRUPO 1 -->
-                        <div class="slide"><img src="img/Peperomia oscura con envés rojizo.jpeg" alt="Planta1"></div>
-                        <div class="slide"><img src="img/Begonia cobriza.jpeg" alt="Planta2"></div>
-                        <div class="slide"><img src="img/Alocasia frydek.jpeg" alt="Planta3"></div>
-                        <div class="slide"><img src="img/Helecho cinta.jpeg" alt="Planta4"></div>
-                        <div class="slide"><img src="img/Monstera preatermisa.jpeg" alt="Planta5"></div>
-                        <div class="slide"><img src="img/Syngonium milk confetti.jpeg" alt="Planta5"></div>
-                        <div class="slide"><img src="img/Colocasia Magic Black.jpeg" alt="Planta5"></div>
-                        <div class="slide"><img src="img/Alocasia amazónica.jpeg" alt="Planta5"></div>
-
-                        <!-- GRUPO 2 -->
-                        <div class="slide"><img src="img/Begonia verde con borde oscuro.jpeg" alt="Planta1"></div>
-                        <div class="slide"><img src="img\Syngonium alita de ángel.jpeg" alt="Planta2"></div>
-                        <div class="slide"><img src="img/Alocasia silver dragon.jpeg" alt="Planta3"></div>
-                        <div class="slide"><img src="img/Monstera dubia.jpeg" alt="Planta4"></div>
-                        <div class="slide"><img src="img/Helecho plumoso.jpeg" alt="Planta5"></div>
-                        <div class="slide"><img src="img/Aglaonema pictum tricolor.jpeg" alt="Planta5"></div>
-                        <div class="slide"><img src="img/Helecho monedita.jpeg" alt="Planta5"></div>
-                        <div class="slide"><img src="img/Colocasia Lemon Lime.jpeg" alt="Planta5"></div>
-                    </div>
-                </div>
-            </section>
-
-            <div class="whatsapp-carrusel" style="margin-bottom: -35px; position: fixed;
-    bottom: 60px;
-    right: 20px;
-    z-index: 9999;">
-                <div class="whatsapp-track " style="text-align: center;">
-                    <a href="https://wa.me/51967203776" target="_blank">
-                        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-                    </a>
-                </div>
+            <!-- TÍTULO -->
+            <div class="nosotros-header">
+                <h2>Sobre Nosotros 🌿</h2>
+                <p>Conectamos tu hogar con la naturaleza</p>
             </div>
 
-            <section class="productos">
+            <!-- CONTENIDO PRINCIPAL -->
+            <div class="nosotros-contenido">
 
-                <h2>Nuestras Plantas</h2>
+                <div class="nosotros-info">
 
-                <section id="monstera">
-                    <div class="productos-contenedor">
-                        <div class="producto">
-                            <img src="img/Monstera borsigiana.jpeg" alt="Planta1">
-                            <h3>Monstera borsigiana</h3>
-                            <p>Similar a la deliciosa, pero de crecimiento más rápido y hojas más ligeras; presenta
-                                fenestraciones elegantes.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 24.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Monstera dubia.jpeg" alt="Planta2">
-                            <h3>Monstera dubia</h3>
-                            <p>Planta trepadora de hojas pequeñas que se adhieren a superficies, con un patrón plateado
-                                sobre verde.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 14.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Monstera preatermisa.jpeg" alt="Planta3">
-                            <h3>Monstera preatermisaa</h3>
-                            <p>Hojas alargadas con fenestraciones naturales que aparecen al madurar. De porte trepador y
-                                aspecto exótico.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 24.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Monstera adansonii.jpeg" alt="Planta3">
-                            <h3>Monstera adansonii</h3>
-                            <p>Hojas verdes con perforaciones naturales que le dan un aspecto exótico y muy decorativo.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 19.90</h4>
-                        </div>
+                    <div class="nosotros-texto">
+                        <h3>¿Quiénes somos?</h3>
+                        <p>
+                            En <strong>ALUNA</strong> creemos en el poder de las plantas para transformar espacios y
+                            mejorar
+                            la
+                            calidad de vida. Nos especializamos en ofrecer especies únicas y asesorarte para que cada
+                            rincón
+                            de tu
+                            hogar respire naturaleza.
+                        </p>
                     </div>
-                </section>
 
-                <section id="syngonium">
-                    <div class="productos-contenedor">
-
-                        <div class="producto">
-                            <img src="img\Symgonium verde.jpeg" alt="Planta4">
-                            <h3>Syngonium verde</h3>
-                            <p>Variedad clásica de verde uniforme.</p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 9.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img\Syngonium albo variegata.jpeg" alt="Planta5">
-                            <h3>Syngonium albo variegata</h3>
-                            <p>Hojas verdes con grandes sectores blancos bien definidos.</p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 19.90</h4>
-                        </div>
-
-
-                        <div class="producto">
-                            <img src="img\Syngonium alita de ángel.jpeg" alt="Planta6">
-                            <h3>Syngonium alita de ángel</h3>
-                            <p>Clásico de hojas verde claro en forma de flecha.</p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 9.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img\Syngonium batik.jpeg" alt="Planta7">
-                            <h3>Syngonium batik</h3>
-                            <p>Hojas con venas marcadas en tonos claros sobre fondo verde oscuro, dando un efecto
-                                artístico
-                                tipo tela batik.</p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 19.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img\Syngonium bronze-chocolate.jpeg" alt="Planta8">
-                            <h3>Syngonium bronze-chocolate</h3>
-                            <p>Tonos profundos entre marrón, cobre y verde oscuro.</p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 19.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img\Syngonium verde moteado.jpeg" alt="Planta9">
-                            <h3>Syngonium verde moteado</h3>
-                            <p>Hojas con pequeños puntitos o manchas verdes.</p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 19.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img\Syngonium confetti.jpeg" alt="Planta10">
-                            <h3>Syngonium confetti</h3>
-                            <p>Hojas verde claro con pequeños puntos rosados dispersos, como salpicaduras.</p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 25.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img\Syngonium milk confetti.jpeg" alt="Planta11">
-                            <h3>Syngonium milk confetti</h3>
-                            <p>Planta clásica que aporta un toque natural y relajante al ambiente.</p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 25.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img\Syngonium mojito.jpeg" alt="Planta12">
-                            <h3>Syngonium mojito</h3>
-                            <p>Variegación moteada en verde claro y oscuro.</p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 25.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img\Syngonium mosaic.jpeg" alt="Planta13">
-                            <h3>Syngonium mosaic</h3>
-                            <p>Variegación irregular en tonos verde y crema, formando patrones tipo mosaico.</p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 34.90</h4>
-                        </div>
-                        <div class="producto">
-                            <img src="img\Syngonium pink.jpeg" alt="Planta14">
-                            <h3>Syngonium pink</h3>
-                            <p>Tonalidades rosadas intensas o suaves según la variedad.</p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 19.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img\Syngonium red spot tricolor.jpeg" alt="Planta15">
-                            <h3>Syngonium red spot tricolor</h3>
-                            <p>Hojas con mezcla de verde, blanco y rosado.</p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 19.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Syngonium punta flecha.jpeg" alt="Planta16">
-                            <h3>Syngonium punta flecha</h3>
-                            <p>Hojas verde intenso con venas blancas muy marcadas que forman un patrón artístico y
-                                definido.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 19.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Syngonium starlite.jpeg" alt="Planta17">
-                            <h3>Syngonium starlite</h3>
-                            <p>Planta de follaje verde, hojas divididas en tres lóbulos, lo que le otorga una apariencia
-                                más
-                                estructurada.</p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 49.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Syngonium Augustatum little star.jpeg" alt="Planta18">
-                            <h3>Syngonium Augustatum little star</h3>
-                            <p>Planta ornamental de follaje delicado con tonos verde y blanco suavemente difuminados.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 12.90</h4>
-                        </div>
+                    <div class="nosotros-extra">
+                        <div>🌱 Amor por la naturaleza</div>
+                        <div>🌿 Calidad en cada planta</div>
+                        <div>🍃 Bienestar para tu hogar</div>
                     </div>
-                </section>
-
-                <section id="caladium">
-                    <div class="productos-contenedor">
-
-                        <div class="producto">
-                            <img src="img/Caladium bicolor.jpeg" alt="Planta4">
-                            <h3>Caladium bicolor</h3>
-                            <p>Hojas delgadas en forma de corazón con combinaciones vibrantes de verde, blanco y
-                                rojo/rosado.</p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 14.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Caladium corazón de Jesús.jpeg" alt="Planta5">
-                            <h3>Caladium corazón de Jesús</h3>
-                            <p>Hojas en forma de corazón con centro rojo intenso uniforme, rodeado de tonos blancos y
-                                bordes verdes.</p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 14.90</h4>
-                        </div>
-
-
-                        <div class="producto">
-                            <img src="img/Caladium Florida Elise.jpeg" alt="Planta6">
-                            <h3>Caladium Florida Elise</h3>
-                            <p>Hojas en forma de corazón con fondo claro (blanco/crema) y delicadas manchas o matices
-                                rosados, acompañadas de bordes y venas verdes suaves</p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 14.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Caladium Heartbeat.jpeg" alt="Planta7">
-                            <h3>Caladium Heartbeat</h3>
-                            <p>Hojas en forma de corazón con venas verdes bien marcadas sobre fondo claro y salpicaduras
-                                en tonos rojos.
-                                tipo tela batik.</p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 99.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Caladium Hi-Lo Beauty.jpeg" alt="Planta8">
-                            <h3>Caladium Hi-Lo Beauty</h3>
-                            <p>Hojas en forma de corazón con fondo claro y manchas irregulares en verde intenso, creando
-                                un efecto tipo camuflaje muy llamativo.</p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 24.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Caladium Pink Panther.jpeg" alt="Planta9">
-                            <h3>Caladium Pink Panther</h3>
-                            <p>Hojas en tonos rosado intenso con bordes y contrastes en verde, creando un efecto
-                                vibrante y muy llamativo.</p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 24.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Caladium sp1.jpeg" alt="Planta10">
-                            <h3>Caladium sp.</h3>
-                            <p>Hojas en forma de corazón con bordes y nervaduras verdes bien definidas, fondo claro
-                                entre venas y suaves matices rosados difuminados.</p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 24.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Caladium sp2.jpeg" alt="Planta11">
-                            <h3>Caladium sp.</h3>
-                            <p>Hojas en forma de corazón con fondo rojo vibrante, venas verdes bien marcadas y borde
-                                oscuro.</p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 34.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Caladium sp3.jpeg" alt="Planta12">
-                            <h3>Caladium sp.</h3>
-                            <p>Hojas alargadas con puntas definidas, en tono crema intenso con nervaduras verdes
-                                marcadas y pequeñas manchas en tonos rosados.</p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 34.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Caladium sp4.jpeg" alt="Planta13">
-                            <h3>Caladium sp.</h3>
-                            <p>Hojas acorazonadas con bordes verdes que se difuminan hacia un rojo intenso en el centro,
-                                desde donde nacen las venas en tonos rojos que se expanden suavemente hacia los bordes.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 34.90</h4>
-                        </div>
-                        <div class="producto">
-                            <img src="img/Caladium sp5.jpeg" alt="Planta14">
-                            <h3>Caladium sp.</h3>
-                            <p>Hojas acorazonadas con orejitas definidas, en tono crema suave con nervadura verde con
-                                matiz vino y ligero moteado en tonos vino.</p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 34.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Caladium sp6.jpeg" alt="Planta15">
-                            <h3>Caladium sp.</h3>
-                            <p>Hojas ligeramente alargadas con orejitas sobrepuestas, fondo crema cubierto en gran parte
-                                por tonos fucsia/rosado intenso, nervadura central oscura y tallos negros.</p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 34.90</h4>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="begonia">
-                    <div class="productos-contenedor">
-                        <div class="producto">
-                            <img src="img/Begonia rex rosado.jpeg" alt="Planta19">
-                            <h3>Begonia rex rosado</h3>
-                            <p>Color rosado vibrante con matices metálicos.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 14.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Begonia gris plateada.jpeg" alt="Planta20">
-                            <h3>Begonia gris plateada</h3>
-                            <p>Hojas redondeadas en tono gris con acabado mate.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 14.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Begonia tiger.jpeg" alt="Planta21">
-                            <h3>Begonia tiger</h3>
-                            <p>Fondo verde brillante con puntos oscuros bien definidos.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 14.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Begonia cobriza.jpeg" alt="Planta22">
-                            <h3>Begonia cobriza</h3>
-                            <p>Tonos cálidos entre cobre y marrón con superficie rugosa.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 14.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Begonia fresa.jpeg" alt="Planta23">
-                            <h3>Begonia fresa</h3>
-                            <p>Hojas de textura densa y color verde profundo. Envés rosado.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 14.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Begonia rex rosada con verde.jpeg" alt="Planta24">
-                            <h3>Begonia rex rosada con verde</h3>
-                            <p>Combinación delicada de rosado y verde con textura suave.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 14.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Begonia verde con borde oscuro.jpeg" alt="Planta25">
-                            <h3>Begonia verde con borde oscuro</h3>
-                            <p>Hojas suaves con borde marcado en tono oscuro que resalta su forma. Clásica pero
-                                sofisticada.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 14.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Begonia verde tipo estrella.jpeg" alt="Planta26">
-                            <h3>Begonia verde tipo estrella</h3>
-                            <p>Fondo verde claro con venas rojizas que irradian desde el centro.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 14.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Begonia piel de sapo.jpeg" alt="Planta27">
-                            <h3>Begonia piel de sapo</h3>
-                            <p>Hojas gruesas y muy texturizadas, con superficie rugosa que recuerda a la piel de un
-                                sapo.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 14.90</h4>
-                        </div>
-                        <div class="producto">
-                            <img src="img/Begonia moteada verde oscuro.jpeg" alt="Planta28">
-                            <h3>Begonia moteada verde oscuro</h3>
-                            <p>Hojas profundas con bordes lilas y manchas verde claro que crean un contraste natural muy
-                                llamativo.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 14.90</h4>
-                        </div>
-
-                    </div>
-                </section>
-
-                <section id="calathea">
-                    <div class="productos-contenedor">
-                        <div class="producto">
-                            <img src="img/Calathea Cetosa Zebrina.jpeg" alt="Planta19">
-                            <h3>Calathea Cetosa Zebrina</h3>
-                            <p>Hojas rayadas en verde y plateado con envés púrpura
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 24.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Calathea White Fusion.jpeg" alt="Planta20">
-                            <h3>Calathea White Fusion</h3>
-                            <p>Hojas verdes con vetas blancas que crean un efecto marmoleado único
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 39.90</h4>
-                        </div>
-
-                    </div>
-                </section>
-
-                <section id="aglaonema">
-                    <div class="productos-contenedor">
-                        <div class="producto">
-                            <img src="img/Aglaonema Green Magic.jpeg" alt="Planta19">
-                            <h3>Aglaonema Green Magic</h3>
-                            <p>Hojas verde suave con centro más claro. Minimalista, fresca y muy fácil de cuidar.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 24.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Aglaonema pictum tricolor.jpeg" alt="Planta20">
-                            <h3>Aglaonema pictum tricolor</h3>
-                            <p>Hojas con un patrón único tipo camuflaje en tonos verde oscuro, verde claro y grisáceo.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 39.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Aglaonema Red Peacock.jpeg" alt="Planta21">
-                            <h3>Aglaonema Red Peacock</h3>
-                            <p>Fondo verde oscuro con venas rosadas bien definidas. Elegante, exótica y de alto
-                                contraste.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 24.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Aglaonema Red Valentine.jpeg" alt="Planta22">
-                            <h3>Aglaonema Red Valentine</h3>
-                            <p>Hojas en tonos rosados intensos con salpicaduras verdes.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 34.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Aglaonema Siam Aurora.jpeg" alt="Planta23">
-                            <h3>Aglaonema Siam Aurora</h3>
-                            <p>Bordes rosados con centro verde variegado; equilibrio perfecto entre color y elegancia.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 29.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Aglaonema ghost.jpeg" alt="Planta24">
-                            <h3>Aglaonema ghost</h3>
-                            <p>Hojas en tonos verde muy claro casi plateado, con apariencia suave y etérea.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 34.90</h4>
-                        </div>
-
-                    </div>
-                </section>
-
-                <section id="helechos">
-                    <div class="productos-contenedor">
-                        <div class="producto">
-                            <img src="img/Helecho babilónico.jpeg" alt="Planta29">
-                            <h3>Helecho babilónico</h3>
-                            <p>Frondas colgantes y abundantes, de crecimiento elegante; perfecto para macetas altas o
-                                colgantes.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 14.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Helecho cinta.jpeg" alt="Planta30">
-                            <h3>Helecho cinta</h3>
-                            <p>Hojas alargadas tipo cinta, de crecimiento ordenado; resistente y fácil de mantener.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 9.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Helecho espada variegado.jpeg" alt="Planta31">
-                            <h3>Helecho espada variegado</h3>
-                            <p>Frondas con tonos verde y crema. Luminoso y llamativo, ideal para destacar en interiores.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 19.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Helecho espada.jpeg" alt="Planta32">
-                            <h3>Helecho espada</h3>
-                            <p>Frondas largas y arqueadas de verde intenso; clásico, abundante y perfecto para colgar o
-                                dar volumen.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 14.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Helecho monedita.jpeg" alt="Planta33">
-                            <h3>Helecho monedita</h3>
-                            <p>Pequeñas hojitas redondeadas que parecen monedas; compacto, tierno y muy decorativo.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 14.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Helecho plumoso.jpeg" alt="Planta34">
-                            <h3>Helecho plumoso</h3>
-                            <p>Hojas finas y suaves, con apariencia ligera tipo pluma; aporta un toque delicado y
-                                elegante.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 19.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Helecho cola de zorro.jpeg" alt="Planta34">
-                            <h3>Helecho cola de zorro</h3>
-                            <p>Follaje verde intenso, denso y suave con frondas largas y arqueadas que recuerdan la cola
-                                de un zorro.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 14.90</h4>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="philodendron">
-                    <div class="productos-contenedor">
-                        <div class="producto">
-                            <img src="img/Philodendron Amazon Sunset.jpeg" alt="Planta29">
-                            <h3>Philodendron Amazon Sunset</h3>
-                            <p>Hojas acorazonadas con tonos rojizos y cobrizos intensos.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 19.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Philodendron Burle Marx Variegata.jpeg" alt="Planta30">
-                            <h3>Philodendron Burle Marx Variegata</h3>
-                            <p>Variegación en tonos crema sobre verde.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 39.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Philodendron Burle Marx.jpeg" alt="Planta31">
-                            <h3>Philodendron Burle Marx</h3>
-                            <p>Hojas alargadas de verde intenso
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 24.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Philodendron Florida Green.jpeg" alt="Planta32">
-                            <h3>Philodendron Florida Green</h3>
-                            <p>Hojas lobuladas con forma estilizada.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 29.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Philodendron Lemon Lime.jpeg" alt="Planta33">
-                            <h3>Philodendron Lemon Lime</h3>
-                            <p>Hojas en tonos verde lima brillante, luminosas y frescas.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 19.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Philodendron mamei.jpeg" alt="Planta34">
-                            <h3>Philodendron mamei</h3>
-                            <p>Philodendron de crecimiento rastrero que destaca por sus hojas verdes con manchas
-                                plateadas, creando un efecto brillante y muy decorativo.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 29.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Philodendron melanocrysum.jpeg" alt="Planta34">
-                            <h3>Philodendron melanocrysum</h3>
-                            <p>Follaje suave con tonos verdes y cobrizos según la luz.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 29.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Philodendron micans.jpeg" alt="Planta34">
-                            <h3>Philodendron micans</h3>
-                            <p>Follaje suave con tonos verdes y cobrizos según la luz.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 24.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Philodendron pastazanum.jpeg" alt="Planta34">
-                            <h3>Philodendron pastazanum</h3>
-                            <p>Hojas grandes, verdes y acorazonadas, con un estilo clásico y elegante.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 39.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Philodendron Pink Princess.jpeg" alt="Planta34">
-                            <h3>Philodendron Pink Princess</h3>
-                            <p>Hojas oscuras con variegación rosada.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 39.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Philodendron plowmanii.jpeg" alt="Planta34">
-                            <h3>Philodendron plowmanii</h3>
-                            <p>Planta rastrera muy llamativa por sus pecíolos anchos y ondulados, que le dan una
-                                apariencia estructural única.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 29.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Philodendron radiatum.jpeg" alt="Planta34">
-                            <h3>Philodendron radiatum</h3>
-                            <p>Hojas profundamente lobuladas que dan un aspecto selvático; muy llamativo y decorativo.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 29.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Philodendron serpens.jpeg" alt="Planta34">
-                            <h3>Philodendron serpens</h3>
-                            <p>Hojas verdes con pecíolos cubiertos de finos pelitos.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 39.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Philodendron verrucosum.jpeg" alt="Planta34">
-                            <h3>Philodendron verrucosum</h3>
-                            <p>Hojas aterciopeladas de verde profundo con venas claras muy marcadas y textura suave.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 39.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Philodendron White Princess.jpeg" alt="Planta34">
-                            <h3>Philodendron White Princess</h3>
-                            <p>Hojas verdes con variegación blanca y tallos con matices rosados.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 39.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Philodendron sp1.jpeg" alt="Planta34">
-                            <h3>Philodendron sp.</h3>
-                            <p>Hojas alargadas de textura gruesa con superficie corrugada y tono verde claro.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 39.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Philodendron sp2.jpeg" alt="Planta34">
-                            <h3>Philodendron sp.</h3>
-                            <p>Hojas gruesas en forma de corazón con un patrón distintivo de líneas horizontales en
-                                tonos verde oscuro y claro.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 39.90</h4>
-                        </div>
-
-                    </div>
-                </section>
-
-                <section id="croton">
-                    <div class="productos-contenedor">
-                        <div class="producto">
-                            <img src="img/Croton Tornillo.jpeg" alt="Planta35">
-                            <h3>Croton Tornillo</h3>
-                            <p>Hojas en espiral de verde oscuro con detalles fucsia que destacan.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 19.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Croton sp1.jpeg" alt="Planta36">
-                            <h3>Croton sp.</h3>
-                            <p>De hoja ancha oscura con manchas naranjas y amarillas moteadas vibrantes.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 19.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Croton sp2.jpeg" alt="Planta37">
-                            <h3>Croton sp.</h3>
-                            <p>Hojas alargadas amarillas y verdes, con venas amarillas suaves.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 19.90</h4>
-                        </div>
-
-                    </div>
-                </section>
-
-                <section id="anthurium">
-                    <div class="productos-contenedor">
-                        <div class="producto">
-                            <img src="img/Anthurium Cristalinum.jpeg" alt="Planta35">
-                            <h3>Anthurium Cristalinum</h3>
-                            <p>Hojas grandes, aterciopeladas y verdes oscuras con nervaduras blancas muy marcadas que
-                                crean un contraste elegante y sofisticado.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 19.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Anthurium Dresleri.jpeg" alt="Planta36">
-                            <h3>Anthurium Dresleri</h3>
-                            <p>Hojas brillantes y acorazonadas de verde intenso.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 39.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Anthurium Forgettii.jpeg" alt="Planta37">
-                            <h3>Anthurium Forgettii</h3>
-                            <p>Hojas verdes oscuras y brillantes, pequeñas pero muy ornamentales.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 39.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Anthurium Magnificum.jpeg" alt="Planta37">
-                            <h3>Anthurium Magnificum</h3>
-                            <p>Hojas grandes, aterciopeladas y verdes oscuras con nervaduras marcadas.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 29.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Anthurium Sagittatum.jpeg" alt="Planta37">
-                            <h3>Anthurium Sagittatum</h3>
-                            <p>Hojas lanceoladas y verdes, compactas.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 29.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Anthurium Veitchii.jpeg" alt="Planta37">
-                            <h3>Anthurium Veitchii</h3>
-                            <p>Hojas grandes, colgantes y acanaladas
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 39.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Anthurium Warocqueanum.jpeg" alt="Planta37">
-                            <h3>Anthurium Warocqueanum</h3>
-                            <p>Hojas largas y aterciopeladas, verde oscuro con nervaduras plateadas.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 39.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Anthurium Regale.jpeg" alt="Planta37">
-                            <h3>Anthurium Regale</h3>
-                            <p>Hojas grandes, aterciopeladas y verdes oscuras con nervaduras blancas muy marcadas.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 29.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Anthurium Besseae.jpeg" alt="Planta37">
-                            <h3>Anthurium Besseae</h3>
-                            <p>Hojas alargadas y coriáceas de verde intenso, con bordes ligeramente ondulados y tallos
-                                firmes.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 39.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Anthurium Carla.jpeg" alt="Planta37">
-                            <h3>Anthurium Carla</h3>
-                            <p>Hojas acorazonadas, verdes y brillantes, de textura suave y porte compacto.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 49.90</h4>
-                        </div>
-
-                    </div>
-                </section>
-
-                <section id="colocasia">
-                    <div class="productos-contenedor">
-                        <div class="producto">
-                            <img src="img/Colocasia ilustri.jpeg" alt="Planta35">
-                            <h3>Colocasia ilustri</h3>
-                            <p>Hojas oscuras con venas verde brillante que crean un contraste elegante y llamativo.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 19.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Colocasia Lemon Lime.jpeg" alt="Planta36">
-                            <h3>Colocasia Lemon Lime</h3>
-                            <p>Hojas en tonos verde lima brillante con efecto luminoso.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 29.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Colocasia Magic Black.jpeg" alt="Planta37">
-                            <h3>Colocasia Magic Black</h3>
-                            <p>Follaje oscuro, casi negro, con un acabado profundo y sofisticado.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 29.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Colocasia Mojito.jpeg" alt="Planta38">
-                            <h3>Colocasia Mojito</h3>
-                            <p>Follaje verde con manchas oscuras irregulares, tipo salpicado.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 34.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Colocasia Suksathit Pink.jpeg" alt="Planta39">
-                            <h3>Colocasia Suksathit Pink</h3>
-                            <p>Hojas profundamente lobuladas con forma única y textura marcada. Exótica y de apariencia
-                                salvaje.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 59.90</h4>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="alocasia">
-                    <div class="productos-contenedor">
-                        <div class="producto">
-                            <img src="img/Alocasia amazónica.jpeg" alt="Planta35">
-                            <h3>Alocasia amazónica</h3>
-                            <p>Hojas verde oscuro con venas blancas muy definidas y bordes ondulados. Clásica,
-                                sofisticada y de alto contraste.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 29.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Alocasia aurea.jpeg" alt="Planta36">
-                            <h3>Alocasia aurea</h3>
-                            <p>Variegación en tonos amarillos sobre verde intenso. Rara, luminosa y muy valorada por
-                                coleccionistas.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 39.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Alocasia cuprea.jpeg" alt="Planta37">
-                            <h3>Alocasia cuprea</h3>
-                            <p>Hojas gruesas con acabado metálico en tonos cobrizo-rojizos. Exótica, brillante y muy
-                                llamativa.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 49.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Alocasia frydek.jpeg" alt="Planta38">
-                            <h3>Alocasia frydek</h3>
-                            <p>Hojas aterciopeladas verde oscuro con venas blancas brillante; elegante y muy apreciada.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 39.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Alocasia jacklyn.jpeg" alt="Planta39">
-                            <h3>Alocasia jacklyn</h3>
-                            <p>Hojas profundamente lobuladas con forma única y textura marcada. Exótica y de apariencia
-                                salvaje.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 49.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Alocasia silver dragon.jpeg" alt="Planta40">
-                            <h3>Alocasia silver dragon</h3>
-                            <p>Hojas plateadas con venas verde oscuro bien marcadas, tipo escamas. Compacta y perfecta
-                                para colección.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 49.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Alocasia variegata.jpeg" alt="Planta40">
-                            <h3>Alocasia variegata</h3>
-                            <p>Hojas de gran tamaño con variegación en tonos blanco, crema y verde, formando patrones
-                                únicos.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 29.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Alocasia macrorrhiza.jpeg" alt="Planta40">
-                            <h3>Alocasia macrorrhiza</h3>
-                            <p>Hojas grandes, verdes y con forma acorazonada que aportan un toque tropical y elegante a
-                                interiores y jardines.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 24.90</h4>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="epipremnum">
-                    <div class="productos-contenedor">
-                        <div class="producto">
-                            <img src="img/Epipremnum aureum Golden Clásico.jpeg" alt="Planta35">
-                            <h3>Epipremnum aureum Golden Clásico</h3>
-                            <p>Tonos verdes y vetas amarillas doradas.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 9.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Epipremnum aureum Marble Queen.jpeg" alt="Planta36">
-                            <h3>Epipremnum aureum Marble Queen</h3>
-                            <p>Hojas con mezcla equilibrada de verde y blanco, creando un efecto marmoleado elegante.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 19.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Epipremnum aureum N'Joy.jpeg" alt="Planta37">
-                            <h3>Epipremnum aureum N'Joy</h3>
-                            <p>Hojas compactas con bordes blancos bien definidos sobre verde.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 19.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Epipremnum aureum Snow Queen.jpeg" alt="Planta38">
-                            <h3>Epipremnum aureum Snow Queen</h3>
-                            <p>Variante más clara, con hojas predominantemente blancas y ligeros toques verdes.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 24.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Epipremnum Lemon.jpeg" alt="Planta39">
-                            <h3>Epipremnum Lemon</h3>
-                            <p>Follaje en tonos verde lima brillante, muy fresco y llamativo. Ideal para iluminar
-                                espacios.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 14.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Epipremnum Brasil.jpeg" alt="Planta39">
-                            <h3>Epipremnum Brasil</h3>
-                            <p>Hojas acorazonadas con franjas en verde y amarillo. Colgante, elegante y muy fácil de
-                                cuidar.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 19.90</h4>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="peperomia">
-                    <div class="productos-contenedor">
-                        <div class="producto">
-                            <img src="img/Peperomia caperata variegada.jpeg" alt="Planta35">
-                            <h3>Peperomia caperata variegada</h3>
-                            <p>Hojas con mezcla de verde y crema, con textura marcada. Luminosa, delicada y muy
-                                atractiva visualmente.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 19.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Peperomia caperata plateada.jpeg" alt="Planta36">
-                            <h3>Peperomia caperata plateada</h3>
-                            <p>Hojas acorazonadas con textura ondulada y tono plateado brillante. Compacta, elegante y
-                                muy decorativa.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 19.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Peperomia obtusifolia.jpeg" alt="Planta37">
-                            <h3>Peperomia obtusifolia</h3>
-                            <p>Hojas gruesas, redondeadas y de verde brillante con aspecto suculento.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 14.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Peperomia verde.jpeg" alt="Planta38">
-                            <h3>Peperomia verde</h3>
-                            <p>Follaje verde intenso y uniforme, de aspecto fresco y natural.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 9.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Peperomia oscura con envés rojizo.jpeg" alt="Planta39">
-                            <h3>Peperomia oscura con envés rojizo</h3>
-                            <p>Hojas verde oscuro con acabado profundo y reverso rojizo. Contraste sutil y elegante que
-                                la hace especial.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 14.90</h4>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="episcia">
-                    <div class="productos-contenedor">
-                        <div class="producto">
-                            <img src="img/Episcia Amarilla.jpeg" alt="Planta35">
-                            <h3>Episcia Amarilla</h3>
-                            <p>Follaje verde que resalta con flores naranjas brillantes, perfecta para colgar y dar
-                                alegría a cualquier espacio.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 14.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Episcia Naranja.jpeg" alt="Planta36">
-                            <h3>Episcia Naranja</h3>
-                            <p>Hojas verdes que acompañan flores amarillas vibrantes, ideal para iluminar rincones y
-                                balcones.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 14.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Episcia neón.jpeg" alt="Planta37">
-                            <h3>Episcia neón</h3>
-                            <p>Follaje verde neón con flores rojas, aporta un toque moderno y llamativo en macetas
-                                colgantes.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 19.90</h4>
-                        </div>
-
-                    </div>
-                </section>
-
-                <section id="otros">
-                    <div class="productos-contenedor">
-                        <div class="producto">
-                            <img src="img/Lirope variegado.jpeg" alt="Planta35">
-                            <h3>Lirope variegado</h3>
-                            <p>Con hojas verdes adornadas con franjas blancas o crema que crean un efecto luminoso y
-                                elegante.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 9.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Cryptatum Bromelioide.jpeg" alt="Planta36">
-                            <h3>Cryptatum Bromelioide</h3>
-                            <p>Hojas verdes, blancas y rosadas que crean un efecto tropical único y elegante.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 14.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Euphorbia Lechero africano.jpeg" alt="Planta37">
-                            <h3>Euphorbia Lechero africano</h3>
-                            <p>Planta suculenta con tallos verdes y carnosos que pueden adoptar formas erectas o
-                                ramificadas, recordando un cactus africano.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 19.90</h4>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/Dracaena Moonshine.jpeg" alt="Planta37">
-                            <h3>Dracaena Moonshine</h3>
-                            <p>Hojas alargadas de color verde grisáceo con un tono plateado que ilumina cualquier
-                                rincón.
-                            </p>
-                            <h4 style="color: rgb(69, 90, 56);">A partir de S/. 34.90</h4>
-                        </div>
-
-                    </div>
-                </section>
-
-            </section>
-        </main>
+                </div>
+
+                <div class="nosotros-img">
+                    <img src="img/Alocasia cuprea.jpeg" alt="Naturaleza">
+                </div>
+
+            </div>
+
+            <!-- MISION VISION VALORES -->
+            <div class="mvv">
+
+                <div class="card-mvv">
+                    <i class="fas fa-seedling"></i>
+                    <h3>Misión</h3>
+                    <p>Brindar plantas de calidad y asesoría personalizada para conectar a las personas con la
+                        naturaleza.</p>
+                </div>
+
+                <div class="card-mvv">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Visión</h3>
+                    <p>Ser una marca referente en el cuidado y comercialización de plantas a nivel nacional.</p>
+                </div>
+
+                <div class="card-mvv">
+                    <i class="fas fa-tree"></i>
+                    <h3>Valores</h3>
+                    <p>Compromiso, sostenibilidad, pasión por la naturaleza y atención cercana al cliente.</p>
+                </div>
+
+            </div>
+
+        </section>
 
         <footer class="footer">
 
             <div class="footer-contenedor">
 
                 <div class="footer-info">
-                    <p class="copyright">ALUNA © 2025</p>
+                    <p class="copyright">ALUNA © 2026</p>
                 </div>
 
                 <div class="footer-redes">
@@ -1216,6 +140,18 @@
                 </div>
 
             </div>
+
         </footer>
+
+        <div class="whatsapp-carrusel" style="margin-bottom: -35px; position: fixed;
+    bottom: 60px;
+    right: 20px;
+    z-index: 9999;">
+            <div class="whatsapp-track " style="text-align: center;">
+                <a href="https://wa.me/51967203776" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+                </a>
+            </div>
+        </div>
     </div>
 </body>
