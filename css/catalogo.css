@@ -7,11 +7,13 @@
 
 /* HEADER */
 .encabezado {
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 15px 40px;
     background: #1e3f28;
+    position: relative; /* Para que el nav se centre aquí */
+    box-sizing: border-box;
 }
 
 .encabezado h1 {
@@ -33,10 +35,19 @@
     font-weight: 600;
 }
 
+.logotipo,
+.menu-plantita {
+    flex: 1;
+}
+
 /* NAV */
 .nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     gap: 25px;
+    z-index: 10;
 }
 
 .nav a {
@@ -54,55 +65,89 @@
     color: #e7cd3e;
 }
 
+/* contenedor */
+.menu-plantita {
+    position: fixed;   /* Esto hace que te siga al bajar */
+    top: 20px;         /* Distancia desde el borde superior de la pantalla */
+    right: 40px;        /* Distancia desde el borde derecho */
+    z-index: 9999;
+}
+
 /* ocultar checkbox */
-#modoOscuroToggle {
+#toggleMenu {
     display: none;
 }
 
-/* modo claro */
-.pagina {
-    background: rgb(226, 225, 225);
-    color: black;
-    min-height: 100vh;
-}
-
-/* modo oscuro */
-#modoOscuroToggle:checked~.pagina {
-    background: #121212;
-    color: white;
-}
-
-label[for="modoOscuroToggle"] {
-    font-size: 18px;
-    cursor: pointer;
-    margin-left: 15px;
-}
-
-/* MODO OSCURO */
-#modoOscuroToggle:checked~* {
-    background: #121212;
-    color: white;
-}
-
-.whatsapp-carrusel a {
-    display: flex;
+/* botón */
+.btn-menu {
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 60px;
-    height: 60px;
-    background: #8ed9ac;
+    width: 50px;
+    height: 50px;
+    background: #2f5d3a;
     border-radius: 50%;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    transition: 0.3s;
+    cursor: pointer;
+    font-size: 26px;
+    box-shadow: 0 6px 0 #1a3521, 0 8px 15px rgba(0, 0, 0, 0.4);
+    transition: all 0.2s;
+    position: relative;
 }
 
-.whatsapp-carrusel img {
-    width: 30px;
-    height: 30px;
+.btn-menu:hover {
+    background: #3a7247;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 0 #1a3521, 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
-.whatsapp-carrusel a:hover {
-    transform: scale(1.1);
+.btn-menu:active {
+    top: 4px;
+    box-shadow: 0 2px 0 #1a3521, 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.btn-menu:active, #toggleMenu:checked + .btn-menu {
+    top: 4px;
+    box-shadow: 0 2px 0 #1a3521, 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* menú oculto */
+.menu-opciones {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    right: 0;
+    top: 60px;
+    background: linear-gradient(135deg, #ffffff 0%, #9ab4bf 50%, #afe183 100%);
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+    min-width: 320px;
+}
+
+/* MOSTRAR al hacer click */
+#toggleMenu:checked+.btn-menu+.menu-opciones {
+    display: grid;
+}
+
+/* estilos links */
+.menu-opciones a {
+    display: block;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.menu-opciones a:hover {
+    background: #cec5c5;
+}
+
+.icono {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
 }
 
 .productos section:target {
@@ -124,46 +169,73 @@ label[for="modoOscuroToggle"] {
 }
 
 .imagencentral {
-    height: 70vh;
+    height: 75vh; /* Un poco más alta para mayor impacto visual */
     background-image: url('../img/ImagenCentral.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* efecto parallax */
+    
+    /* EFECTO PARALLAX SUTIL */
+    background-attachment: fixed; 
+    
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    overflow: hidden;
+    position: relative;
+    overflow: hidden; 
+    width: 100%;
+    max-width: 100%;
 }
 
-
 .imagencentral::before {
-    z-index: 1;
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.35);
+    background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(30,63,40,0.7) 100%);
+    z-index: 1;
 }
 
 /* texto */
 
 .imagencentraltexto {
     position: relative;
-    z-index: 2;
-    background: linear-gradient(135deg, #95da92 0%, #dac0d1 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    z-index: 2; 
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    padding: 0 20px;
+    
+    animation: revelarTexto 1.5s ease-out forwards;
+    opacity: 0; /* Empieza invisible */
+    transform: translateY(20px); /* Empieza un poco más abajo */
 }
 
 .imagencentraltexto h2 {
-    font-size: 60px;
-    line-height: 1.4;
+    font-size: 65px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    
+    /* DEGRADADO METÁLICO EN EL TEXTO */
+    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    /* Sombra de texto para dar volumen */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+@keyframes revelarTexto {
+    0% {
+        opacity: 0;
+        transform: translateY(20px) scale(0.98);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
 }
 
 .catalogo {
@@ -191,64 +263,6 @@ label[for="modoOscuroToggle"] {
 
 .imagencentral {
     animation: zoomFondo 20s ease-in-out infinite alternate;
-}
-
-/* contenedor */
-.menu-plantita {
-    position: relative;
-    z-index: 1000;
-}
-
-/* ocultar checkbox */
-#toggleMenu {
-    display: none;
-}
-
-/* botón */
-.btn-menu {
-    background: #2f5d3a;
-    color: rgb(86, 113, 118);
-    padding: 10px 14px;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 18px;
-}
-
-/* menú oculto */
-.menu-opciones {
-    display: none;
-    position: absolute;
-    z-index: 1000;
-    right: 0;
-    top: 50px;
-    background: linear-gradient(135deg, #ffffff 0%, #9ab4bf 50%, #afe183 100%);
-    color: rgb(86, 113, 118);
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-}
-
-/* MOSTRAR al hacer click */
-#toggleMenu:checked+.btn-menu+.menu-opciones {
-    display: block;
-}
-
-/* estilos links */
-.menu-opciones a {
-    display: block;
-    padding: 12px 20px;
-    text-decoration: none;
-    color: #333;
-}
-
-.menu-opciones a:hover {
-    background: #cec5c5;
-}
-
-.icono {
-    width: 20px;
-    vertical-align: middle;
-    margin-right: 8px;
 }
 
 /* sección productos */
@@ -469,13 +483,37 @@ label[for="modoOscuroToggle"] {
 
 html,
 body {
-    height: 100%;
+    max-width: 100%;
+    overflow-x: hidden; /* Esto corta cualquier desborde horizontal radicalmente */
+    margin: 0;
+    padding: 0;
 }
 
 .pagina {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+.whatsapp-carrusel a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: #8ed9ac;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+.whatsapp-carrusel img {
+    width: 30px;
+    height: 30px;
+}
+
+.whatsapp-carrusel a:hover {
+    transform: scale(1.1);
 }
 
 main {
