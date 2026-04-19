@@ -14,7 +14,7 @@
     background: #1e3f28;
 }
 
-.encabezado h1{
+.encabezado h1 {
     background: linear-gradient(90deg, rgb(193, 219, 161), #9a9898);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -90,7 +90,6 @@ main {
     margin: 40px auto;
     padding: 0 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    flex: 1;
 }
 
 /* Título */
@@ -102,37 +101,13 @@ main h2 {
     color: #2f5d3a;
 }
 
-/* frase inicial */
-.info-ubicacion p {
-    font-style: italic;
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 16px;
-    color: #5a5555;
-}
-
-/* íconos y datos */
-.info-item {
+.footer {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 10px;
-    font-size: 16px;
-    margin-bottom: 15px;
-}
-
-.info-item i {
-    font-size: 20px;
-}
-
-
-/* contenedor del mapa */
-.mapa-container {
-    width: 100%;
-    height: 400px;
-    margin-top: 30px;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    background: #2f5d3a;
+    color: white;
+    padding: 15px 40px;
 }
 
 /* redes sociales */
@@ -151,38 +126,11 @@ main h2 {
     transform: scale(1.2);
 }
 
-/* frase inicial */
-.info-ubicacion p {
-    font-style: italic;
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 16px;
-    color: #555;
-}
-
-/* íconos y datos */
-.info-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 16px;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-.info-item i {
-    color: #2f5d3a;
-    font-size: 20px;
-}
-
 .footer {
     background: linear-gradient(135deg, #2f5d3a, #1e3f28);
     color: white;
     padding: 40px 60px;
     border-top: 4px solid #8ee38e;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 /* contenedor */
@@ -196,15 +144,31 @@ main h2 {
     width: 100%;
 }
 
-.footer-info img {
-    margin-bottom: 10px;
-}
-
 /* redes a la derecha */
 .footer-redes {
     align-self: center;
     margin-top: 10px;
 }
+
+/* info izquierda */
+
+.footer-info img {
+    margin-bottom: 10px;
+}
+
+.frase {
+    font-size: 15px;
+    margin-bottom: 6px;
+    opacity: 0.9;
+}
+
+.copyright {
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+/* redes derecha */
+
 
 .footer-redes h3 {
     margin-bottom: 10px;
@@ -238,17 +202,6 @@ main h2 {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.frase {
-    font-size: 15px;
-    margin-bottom: 6px;
-    opacity: 0.9;
-}
-
-.copyright {
-    font-size: 13px;
-    opacity: 0.7;
-}
-
 html,
 body {
     height: 100%;
@@ -260,6 +213,10 @@ body {
     flex-direction: column;
 }
 
+main {
+    flex: 1;
+}
+
 .whatsapp-carrusel a {
     display: flex;
     align-items: center;
@@ -268,7 +225,7 @@ body {
     height: 60px;
     background: #8ed9ac;
     border-radius: 50%;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     transition: 0.3s;
 }
 
@@ -279,45 +236,6 @@ body {
 
 .whatsapp-carrusel a:hover {
     transform: scale(1.1);
-}
-
-/* mapa responsive */
-.mapa-container iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
-}
-
-/* responsive tablets */
-@media (max-width:768px) {
-    main h2 {
-        font-size: 28px;
-    }
-
-    .info-ubicacion p,
-    .info-item {
-        font-size: 15px;
-    }
-
-    .mapa-container {
-        height: 300px;
-    }
-}
-
-/* responsive móviles */
-@media (max-width:480px) {
-    main h2 {
-        font-size: 24px;
-    }
-
-    .info-ubicacion p,
-    .info-item {
-        font-size: 14px;
-    }
-
-    .mapa-container {
-        height: 250px;
-    }
 }
 
 /* RESPONSIVO */
@@ -331,6 +249,10 @@ body {
 
     .logotipo h1 {
         font-size: 20px;
+    }
+
+    main h2 {
+        font-size: 28px;
     }
 
     .imagencentral {
@@ -351,24 +273,6 @@ body {
 /* ========================= */
 @media (max-width:768px) {
 
-    .footer-contenedor {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-    }
-
-    .footer-redes {
-        text-align: center;
-    }
-
-    .redes {
-        justify-content: center;
-    }
-
-}
-
-@media (max-width:768px) {
-
     .encabezado {
         flex-direction: column;
         justify-content: space-between;
@@ -383,6 +287,10 @@ body {
     label[for="modoOscuroToggle"] {
         margin-left: auto;
         margin-right: 0;
+    }
+
+    main{
+        margin-top: -10px;
     }
 
     /* IMAGEN CENTRAL */
@@ -421,14 +329,31 @@ body {
         gap: 15px;
     }
 
-}
+    .footer-contenedor {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
 
+    .footer-redes {
+        text-align: center;
+    }
+
+    .redes {
+        justify-content: center;
+    }
+
+}
 
 /* ========================= */
 /* CELULARES PEQUEÑOS */
 /* ========================= */
 
 @media (max-width:480px) {
+
+    main h2 {
+        font-size: 24px;
+    }
 
     .imagencentraltexto h2 {
         font-size: 22px;
